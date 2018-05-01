@@ -2,7 +2,7 @@
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 [![README](https://img.shields.io/badge/README-中文-blue.svg)](README-Chinese.md)
 
-Mac版QQ音乐绿砖破解，可收听无损音乐和下载无损音乐到本地
+Mac版QQ音乐绿砖破解，可收听无损音乐和下载无损音乐到本地，注意必须登录QQ音乐（随便一个QQ账号登录即可）。
 
 ## V1.1
 
