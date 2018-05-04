@@ -16,11 +16,13 @@
 
 static BOOL (*origin_DownLoadTask_checkHaveRightToDownload_rate)(DownLoadTask*,SEL,id,int);
 static BOOL new_DownLoadTask_checkHaveRightToDownload_rate(DownLoadTask* self,SEL _cmd,id a3, int a4) {
+    NSLog(@"QQMusicHelper助手 ---------- hook checkHaveRightToDownload is ok");
     return YES;
 }
 
 static int (*origin_GetFlexBOOL)(int64_t a1, int64_t a2, int64_t a3, int64_t a4, int64_t a5, int64_t a6, int64_t a7, int64_t a8);
 static int new_GetFlexBOOL(int64_t a1, int64_t a2, int64_t a3, int64_t a4, int64_t a5, int64_t a6, int64_t a7, int64_t a8) {
+    NSLog(@"QQMusicHelper助手 ---------- hook GetFlexBOOL is ok");
     return 1;
 }
 
