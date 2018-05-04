@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AD7FF0C20989D6D0030D9E4 /* QQMusicHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD7FF0B20989D6D0030D9E4 /* QQMusicHelper.h */; };
-		0AD7FF0E20989D6D0030D9E4 /* QQMusicHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7FF0D20989D6D0030D9E4 /* QQMusicHelper.m */; };
+		0A7208D2209C64150084F769 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7208D1209C64150084F769 /* AntiAntiDebug.m */; };
+		0A7208D5209C64150084F769 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A7208D4209C64150084F769 /* fishhook.c */; };
+		0A7208D7209C64150084F769 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7208D6209C64150084F769 /* fishhook.h */; };
+		0A7208DB209C64150084F769 /* QQMusicHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7208DA209C64150084F769 /* QQMusicHelper.h */; };
+		0A7208DD209C64150084F769 /* QQMusicHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7208DC209C64150084F769 /* QQMusicHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AD7FF0620989D6D0030D9E4 /* libQQMusicHelper.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libQQMusicHelper.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AD7FF0A20989D6D0030D9E4 /* put mac app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put mac app here"; path = "TargetApp/put mac app here"; sourceTree = "<group>"; };
-		0AD7FF0B20989D6D0030D9E4 /* QQMusicHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQMusicHelper.h; sourceTree = "<group>"; };
-		0AD7FF0D20989D6D0030D9E4 /* QQMusicHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMusicHelper.m; sourceTree = "<group>"; };
+		0A7208CD209C64150084F769 /* libQQMusicHelper.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libQQMusicHelper.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7208D1209C64150084F769 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		0A7208D4209C64150084F769 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		0A7208D6209C64150084F769 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		0A7208D9209C64150084F769 /* put mac app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put mac app here"; path = "TargetApp/put mac app here"; sourceTree = "<group>"; };
+		0A7208DA209C64150084F769 /* QQMusicHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQMusicHelper.h; sourceTree = "<group>"; };
+		0A7208DC209C64150084F769 /* QQMusicHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQMusicHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0AD7FF0220989D6D0030D9E4 /* Frameworks */ = {
+		0A7208C9209C64150084F769 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,36 +35,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AD7FEFC20989D6D0030D9E4 = {
+		0A7208C3209C64150084F769 = {
 			isa = PBXGroup;
 			children = (
-				0AD7FF0820989D6D0030D9E4 /* QQMusicHelper */,
-				0AD7FF0720989D6D0030D9E4 /* Products */,
+				0A7208CF209C64150084F769 /* QQMusicHelper */,
+				0A7208CE209C64150084F769 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0AD7FF0720989D6D0030D9E4 /* Products */ = {
+		0A7208CE209C64150084F769 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AD7FF0620989D6D0030D9E4 /* libQQMusicHelper.dylib */,
+				0A7208CD209C64150084F769 /* libQQMusicHelper.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AD7FF0820989D6D0030D9E4 /* QQMusicHelper */ = {
+		0A7208CF209C64150084F769 /* QQMusicHelper */ = {
 			isa = PBXGroup;
 			children = (
-				0AD7FF0B20989D6D0030D9E4 /* QQMusicHelper.h */,
-				0AD7FF0D20989D6D0030D9E4 /* QQMusicHelper.m */,
-				0AD7FF0920989D6D0030D9E4 /* TargetApp */,
+				0A7208DA209C64150084F769 /* QQMusicHelper.h */,
+				0A7208DC209C64150084F769 /* QQMusicHelper.m */,
+				0A7208D0209C64150084F769 /* AntiAntiDebug */,
+				0A7208D3209C64150084F769 /* fishhook */,
+				0A7208D8209C64150084F769 /* TargetApp */,
 			);
 			path = QQMusicHelper;
 			sourceTree = "<group>";
 		};
-		0AD7FF0920989D6D0030D9E4 /* TargetApp */ = {
+		0A7208D0209C64150084F769 /* AntiAntiDebug */ = {
 			isa = PBXGroup;
 			children = (
-				0AD7FF0A20989D6D0030D9E4 /* put mac app here */,
+				0A7208D1209C64150084F769 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		0A7208D3209C64150084F769 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				0A7208D4209C64150084F769 /* fishhook.c */,
+				0A7208D6209C64150084F769 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		0A7208D8209C64150084F769 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				0A7208D9209C64150084F769 /* put mac app here */,
 			);
 			name = TargetApp;
 			sourceTree = "<group>";
@@ -66,25 +91,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0AD7FF0320989D6D0030D9E4 /* Headers */ = {
+		0A7208CA209C64150084F769 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD7FF0C20989D6D0030D9E4 /* QQMusicHelper.h in Headers */,
+				0A7208DB209C64150084F769 /* QQMusicHelper.h in Headers */,
+				0A7208D7209C64150084F769 /* fishhook.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0AD7FF0520989D6D0030D9E4 /* QQMusicHelper */ = {
+		0A7208CC209C64150084F769 /* QQMusicHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AD7FF1120989D6D0030D9E4 /* Build configuration list for PBXNativeTarget "QQMusicHelper" */;
+			buildConfigurationList = 0A7208E0209C64150084F769 /* Build configuration list for PBXNativeTarget "QQMusicHelper" */;
 			buildPhases = (
-				0AD7FF0120989D6D0030D9E4 /* Sources */,
-				0AD7FF0220989D6D0030D9E4 /* Frameworks */,
-				0AD7FF0320989D6D0030D9E4 /* Headers */,
-				0AD7FF0420989D6D0030D9E4 /* ShellScript */,
+				0A7208C8209C64150084F769 /* Sources */,
+				0A7208C9209C64150084F769 /* Frameworks */,
+				0A7208CA209C64150084F769 /* Headers */,
+				0A7208CB209C64150084F769 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -92,43 +118,43 @@
 			);
 			name = QQMusicHelper;
 			productName = QQMusicHelper;
-			productReference = 0AD7FF0620989D6D0030D9E4 /* libQQMusicHelper.dylib */;
+			productReference = 0A7208CD209C64150084F769 /* libQQMusicHelper.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0AD7FEFD20989D6D0030D9E4 /* Project object */ = {
+		0A7208C4209C64150084F769 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = tangxianhai;
 				TargetAttributes = {
-					0AD7FF0520989D6D0030D9E4 = {
+					0A7208CC209C64150084F769 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0AD7FF0020989D6D0030D9E4 /* Build configuration list for PBXProject "QQMusicHelper" */;
+			buildConfigurationList = 0A7208C7209C64150084F769 /* Build configuration list for PBXProject "QQMusicHelper" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 0AD7FEFC20989D6D0030D9E4;
-			productRefGroup = 0AD7FF0720989D6D0030D9E4 /* Products */;
+			mainGroup = 0A7208C3209C64150084F769;
+			productRefGroup = 0A7208CE209C64150084F769 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AD7FF0520989D6D0030D9E4 /* QQMusicHelper */,
+				0A7208CC209C64150084F769 /* QQMusicHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AD7FF0420989D6D0030D9E4 /* ShellScript */ = {
+		0A7208CB209C64150084F769 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,23 +165,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = /opt/MonkeyDev/Tools/packformac.sh;
+			shellScript = /opt/MonkeyDev/Tools/mpack.sh;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AD7FF0120989D6D0030D9E4 /* Sources */ = {
+		0A7208C8209C64150084F769 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD7FF0E20989D6D0030D9E4 /* QQMusicHelper.m in Sources */,
+				0A7208D5209C64150084F769 /* fishhook.c in Sources */,
+				0A7208DD209C64150084F769 /* QQMusicHelper.m in Sources */,
+				0A7208D2209C64150084F769 /* AntiAntiDebug.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0AD7FF0F20989D6D0030D9E4 /* Debug */ = {
+		0A7208DE209C64150084F769 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,13 +233,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(MonkeyDevPath)/FrameworksForMac",
+					"$(MonkeyDevPath)/MFrameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(MonkeyDevPath)/FrameworksForMac",
+					"$(MonkeyDevPath)/MFrameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				MonkeyDevPath = /opt/MonkeyDev;
 				ONLY_ACTIVE_ARCH = YES;
@@ -219,7 +247,7 @@
 			};
 			name = Debug;
 		};
-		0AD7FF1020989D6D0030D9E4 /* Release */ = {
+		0A7208DF209C64150084F769 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,20 +291,20 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(MonkeyDevPath)/FrameworksForMac",
+					"$(MonkeyDevPath)/MFrameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(MonkeyDevPath)/FrameworksForMac",
+					"$(MonkeyDevPath)/MFrameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MonkeyDevPath = /opt/MonkeyDev;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		0AD7FF1220989D6D0030D9E4 /* Debug */ = {
+		0A7208E1209C64150084F769 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -293,7 +321,7 @@
 			};
 			name = Debug;
 		};
-		0AD7FF1320989D6D0030D9E4 /* Release */ = {
+		0A7208E2209C64150084F769 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -313,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AD7FF0020989D6D0030D9E4 /* Build configuration list for PBXProject "QQMusicHelper" */ = {
+		0A7208C7209C64150084F769 /* Build configuration list for PBXProject "QQMusicHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AD7FF0F20989D6D0030D9E4 /* Debug */,
-				0AD7FF1020989D6D0030D9E4 /* Release */,
+				0A7208DE209C64150084F769 /* Debug */,
+				0A7208DF209C64150084F769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AD7FF1120989D6D0030D9E4 /* Build configuration list for PBXNativeTarget "QQMusicHelper" */ = {
+		0A7208E0209C64150084F769 /* Build configuration list for PBXNativeTarget "QQMusicHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AD7FF1220989D6D0030D9E4 /* Debug */,
-				0AD7FF1320989D6D0030D9E4 /* Release */,
+				0A7208E1209C64150084F769 /* Debug */,
+				0A7208E2209C64150084F769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0AD7FEFD20989D6D0030D9E4 /* Project object */;
+	rootObject = 0A7208C4209C64150084F769 /* Project object */;
 }

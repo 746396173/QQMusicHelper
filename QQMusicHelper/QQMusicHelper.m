@@ -5,7 +5,7 @@
 //  QQMusicHelper.m
 //  QQMusicHelper
 //
-//  Created by tangxianhai on 2018/5/1.
+//  Created by tangxianhai on 2018/5/4.
 //  Copyright © 2018年 tangxianhai. All rights reserved.
 //
 
@@ -14,7 +14,7 @@
 
 @class DownLoadTask;
 
-static BOOL (*origin_DownLoadTask_checkHaveRightToDownload_rate)(DownLoadTask*,SEL,id,id,int);
+static BOOL (*origin_DownLoadTask_checkHaveRightToDownload_rate)(DownLoadTask*,SEL,id,int);
 static BOOL new_DownLoadTask_checkHaveRightToDownload_rate(DownLoadTask* self,SEL _cmd,id a3, int a4) {
     return YES;
 }
@@ -25,16 +25,8 @@ static int new_GetFlexBOOL(int64_t a1, int64_t a2, int64_t a3, int64_t a4, int64
 }
 
 static void __attribute__((constructor)) initialize(void) {
-    
-    MSHookMessageEx(objc_getClass("DownLoadTask"),  @selector(checkHaveRightToDownload:rate:), (IMP)&new_DownLoadTask_checkHaveRightToDownload_rate, (IMP*)&origin_DownLoadTask_checkHaveRightToDownload_rate);
-    
-    
-    MSImageRef image = MSGetImageByName("/Users/tangxianhai/Desktop/QQMusicHelper/QQMusicHelper/TargetApp/QQMusic.app/Contents/MacOS/QQMusic");
-    
-    if (image == nil) {
-        image = MSGetImageByName("/Applications/QQMusic.app/Contents/MacOS/QQMusic");
-    }
+    MSHookMessageEx(objc_getClass("DownLoadTask"),  NSSelectorFromString(@"checkHaveRightToDownload:rate:"), (IMP)&new_DownLoadTask_checkHaveRightToDownload_rate, (IMP*)&origin_DownLoadTask_checkHaveRightToDownload_rate);
+    MSImageRef image = MSGetImageByName("/Applications/QQMusic.app/Contents/MacOS/QQMusic");
     void *_GetFlexBOOL = MSFindSymbol(image, "_GetFlexBOOL");
-    MSHookFunction(_GetFlexBOOL, &new_GetFlexBOOL, &origin_GetFlexBOOL);
-    
+    MSHookFunction(_GetFlexBOOL, &new_GetFlexBOOL, (void *)&origin_GetFlexBOOL);
 }
